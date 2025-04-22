@@ -11,3 +11,4 @@ file_path = "medications"
 document_list = DocumentLoader.from_files(Path(file_path))
 document_list = recursive_split(document_list, chunk_size=2000)
 vector_ids = rag.save_documents(documents=document_list)
+print(f"Saved {len(vector_ids)} documents.")
