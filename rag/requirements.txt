@@ -1,0 +1,18 @@
+pytest
+langchain
+langchain_community
+langchain-chroma
+langchain-openai
+langchain_experimental
+docx2txt
+unstructured[all-docs]
+psutil  # for unstructured
+modelscope
+addict
+datasets==2.18.0
+oss2
+simplejson
+langchain-cohere
+python-dotenv
+sentence-transformers  # for jinaai
+sortedcontainers
