@@ -34,7 +34,7 @@ if prompt := st.chat_input("What is up?"):
             model=st.session_state["openai_model"],
             messages=[
                 {"role": m["role"], "content": f'RAG Results: {m["rag"]}, User Query: {m["content"]}'}
-                for m in st.session_state.messages[-5]
+                for m in st.session_state.messages[-5:]
             ],
             stream=True,
         )
